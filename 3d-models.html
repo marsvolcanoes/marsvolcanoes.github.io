@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="google-site-verification" content="lbluN2Ji00svb1JABC8r8FlxxSCUrPYHv8iREj20iDU" />
+	<meta type="description" content="Jacob Richardson is a planetary volcanology post-doctoral fellow at NASA Goddard Space Flight Center, studying volcanoes on Earth and other planets." />
+	<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
+	
+	<title>Jacob Richardson :: 3D Models</title>
+	
+	
+	<script src="js/logo.js"></script>
+	<script src="js/ModelLightBox.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="css/npp-era.css">
+	
+	
+	<style>
+	
+	#modelWrapper {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width:99%;
+		background-image: url(images/background_50black.png);
+		z-index: 1;
+	}
+	
+	#modelClose {
+		float:right;
+	}
+	
+	#modelClose a {
+		text-decoration: none;
+		font-family: sans-serif;
+		font-weight:bold;
+		font-size:1.5em;
+	}
+	
+	.modelpopup {
+	  position: relative;
+	  left: 50%;
+	  top: 2em;
+	  width:75%;
+	  z-index: 2;
+	}
+	
+	.modelpopupinner {
+	  position: relative;
+	  left: -50%;
+	  z-index: 2;
+	}
+	
+	#PrintLB{
+		display: none;
+		margin-bottom: 5em;
+	}
+	</style>
+	
+	</head>
+	
+
+	<body>
+		
+		<div id="content" >
+			<div id="header">
+				<div id="header-links">
+					<div id="header-links-box">
+						<a class="headlinks" href="index.html">Bio &amp; Vitae</a>
+						<a class="headlinks" href="index.html#Pubs-n-Data">Publications</a>
+						<a class="headlinks" href="index.html#DataMaps">Data</a>
+						<a class="headlinks" href="index.html#Codes">Codes</a>
+						<a class="headlinks" href="3d-models.html" ><span style="display:inline-block;">3D Models</span></a>
+					</div><!--header-links-box-->
+				</div><!--header-links-->
+				
+			<div id="header-name">
+				<div id="logosvg">
+				<a href="index.html" style="text-decoration:none;">
+					<svg>
+						<path id="arc1" fill="#eee"/>
+						<path id="arc2" fill="gray"/>
+						<path id="arc3" fill="gray" />
+						<path id="arc4" fill="#f5f5f5" />
+					</svg>
+				</a>
+				</div> <!--logosvg-->
+				<div id="header-byline">
+					<h1>Jacob A. Richardson</h1>
+					<h2>Planetary Volcanologist</h2>
+				</div> <!--header-byline-->
+				
+			</div> <!--header-name-->
+			</div> <!--header-->
+			
+			
+			
+		<div id="modelWrapper" onclick="hideModel();">
+			<div class="modelpopup"> 
+				<div class="modelpopupinner" id="PrintLB">
+					<div  class="LBcontent-div">
+						<span id="modelClose"><a href=''>X</a></span>
+						<h3 class="LBp" id="modelTitle"></h3>
+						<div class="printblog">
+							<img src="#" class="LBimg" id="modelPic" />
+							<div class="LBp" id="modelAbout"></div>
+							<a class="LBa" id="modelDownload" href="#">Download the .STL</a>
+							<div id="STLViewer"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="ThreeDee-desc" class="content-div">
+			<h3>3D Printing</h3>
+			<p>Below are some 3D print-ready models that I have created for education outreach, data visualization, and scientific research. I primarily print elevation models that show the real shape of a region of a planet or moon using real topographic data aqcuired from space or with laser mapping surveys that I've been a part of.</p>
+			<p>3D Print Models are available in STL format by clicking the orange box that displays after selecting a model. Most models were created by converting digital elevation models into OBJ files using my python script, <a href="https://github.com/jarichardson/dtm2obj">dtm2obj</a> or a variant of it. Feel free to download and modify. OBJ files are converted to STL files using MeshLab.</p>
+		</div>
+		
+		<div id="3D-Library" class="content-div">
+			<h3>Models</h3>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('Ina');"><div class="PrintModel" >
+				<p>Ina D, Moon</p>
+				<img src="images/3Dmodels/3d-ina-model.png" />
+			</div></a>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('a11');"><div class="PrintModel" >
+				<p>Apollo 11 Landing Site</p>
+				<img src="images/3Dmodels/apollo/a11_modelview.png" />
+			</div></a>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('a12');"><div class="PrintModel" >
+				<p>Apollo 12 Landing Site</p>
+				<img src="images/3Dmodels/apollo/a12_modelview.png" />
+			</div></a>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('a14');"><div class="PrintModel" >
+				<p>Apollo 14 Landing Site</p>
+				<img src="images/3Dmodels/apollo/a14_modelview.png" />
+			</div></a>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('a15');"><div class="PrintModel" >
+				<p>Apollo 15 Landing Site</p>
+				<img src="images/3Dmodels/apollo/a15_modelview.png" />
+			</div></a>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('a16');"><div class="PrintModel" >
+				<p>Apollo 16 Landing Site</p>
+				<img src="images/3Dmodels/apollo/a16_modelview.png" />
+			</div></a>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('a17');"><div class="PrintModel" >
+				<p>Apollo 17 Landing Site</p>
+				<img src="images/3Dmodels/apollo/a17_modelview.png" />
+			</div></a>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('TL');" ><div class="PrintModel" >
+				<p>Apollo 17 Region</p>
+				<img src="images/3Dmodels/apollo/a17-region_modelview.png" />
+			</div></a>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('ori');" ><div class="PrintModel" >
+				<p>Orientale Crust</p>
+				<img src="images/3Dmodels/orientale_crust_model.png" />
+			</div></a>
+			<a class="PrintModelLink" href="#modelWrapper" onclick="showModel('mos');" ><div class="PrintModel" >
+				<p>Moscoviense Crust</p>
+				<img src="images/3Dmodels/mosc_crust_model.png" />
+			</div></a>
+			
+		</div>
+		
+
+		
+			<div id="footer">
+				<p>Created and copyright 2018 by Jacob</p>
+			</div>
+		
+		
+	
+
+
+	</body>
+
+</html>
+

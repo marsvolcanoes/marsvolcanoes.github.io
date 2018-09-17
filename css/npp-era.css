@@ -1,0 +1,414 @@
+
+		body {
+			background-color: #fff;
+		
+		}
+		
+		* { 
+			margin: 0; 
+			padding: 0; 
+		}
+		
+		@font-face {  
+			font-family: "Amble Light";  
+			src: url( fonts/Amble-Light.eot ); /* IE */  
+			src: local("Amble Light"), url( fonts/Amble-Light.ttf ) format("truetype"); /* non-IE */  
+		}  
+		
+		@font-face {  
+			font-family: "Amble Bold";  
+			src: url( fonts/Amble-Bold.eot ); /* IE */  
+			src: local("Amble Bold"), url( fonts/Amble-Bold.ttf ) format("truetype"); /* non-IE */  
+		}  
+
+		@font-face {  
+			font-family: "Amble";  
+			src: url( fonts/Amble-Regular.eot ); /* IE */  
+			src: local("Amble Regular"), url( fonts/Amble-Regular.ttf ) format("truetype"); /* non-IE */  
+		} 
+
+		@font-face {  
+			font-family: "Amble LCI";  
+			src: url( fonts/Amble-LCI.eot ); /* IE */  
+			src: local("Amble LCI"), url( fonts/Amble-LCI.ttf ) format("truetype"); /* non-IE */  
+		}  
+
+		@font-face {  
+			font-family: "Amble LC";  
+			src: url( fonts/Amble-LC.eot ); /* IE */  
+			src: local("Amble LC"), url( fonts/Amble-LC.ttf ) format("truetype"); /* non-IE */  
+		}  
+		
+		h1 {
+			font: 1.7em "Amble Bold", Tahoma, Sans-Serif; 
+			padding: 0.2em 0 0em;
+		}
+		
+		h2 {
+			font: 1em "Amble", Tahoma, Sans-serif; 
+			padding: 0 0 1em;
+			font-weight:normal;
+		}
+		
+		a {
+			color:black;
+			font: 1em/2 "Amble", Tahoma, Sans-serif; 
+		}
+		
+		a:hover {
+			color:#999;
+		}
+
+		img.source-image {
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -2;
+		}
+		
+		#header {
+			margin-top: 4em;
+			padding: 0;
+			width:100%;
+			
+		}
+		
+		#header-name{
+		padding: 0;
+		margin:0;
+		clear:both;
+		color: #444;
+		}
+		
+		#header-links {
+			text-align: right;
+			font: 1em/2 "Amble", Tahoma, Sans-serif; 			
+		}
+		
+		
+		#header-links-box {
+			border-bottom: 1px solid black;
+			text-align: center;
+			width: 40%;			
+			float: right;
+			font: 1em/2 "Amble", Tahoma, Sans-serif;
+		}
+		
+		#site-description {
+			visibility:hidden;
+			height:0;
+			width:0;
+		}
+		
+		#page-wrap {
+			width: 545px; 
+			margin: 50px auto; 
+			padding: 20px 30px 20px 5px; 
+			background: white; 
+			-moz-box-shadow: 0 0 20px black; 
+			-webkit-box-shadow: 0 0 20px black; 
+			box-shadow: 0 0 20px black; 
+			overflow:auto;
+		}
+		
+		p { 
+			font: 1em/1.5 "Amble Light", Tahoma, Serif; 
+			margin: 0 0 25px 0;  
+		}
+		
+		
+		.headlinks{
+			margin: 0 2%;
+			padding: 0 0.5em;
+			font-weight:bold;
+			text-decoration: none;
+		}
+		
+		.headlinks.hover{
+			color: #aaa;
+			font-weight:bold;
+			text-decoration: underline;
+		}
+		
+		#content {
+			margin: 0 auto;
+			margin-bottom:3em;
+			background: #fffefd;
+			width: 90%;
+			
+		}
+		
+		#bio {
+			overflow: hidden;
+		}
+		
+		.content-div {
+		
+			padding: 1em 5%;
+			margin-top: 1em;
+			margin-bottom: 2em;
+			
+			-moz-box-shadow: 0 0 20px black; 
+			-webkit-box-shadow: 0 0 20px black; 
+			box-shadow: 0 0 20px black; 
+		
+			background: rgba(230,230,230,1);
+			background: -moz-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(230,230,230,1)), color-stop(100%, rgba(255,255,255,1)));
+			background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			background: -o-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			background: -ms-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			background: linear-gradient(to bottom, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2140', endColorstr='#0712b3', GradientType=0 );
+			
+			border: 2px outset #ddd;
+		}
+		
+		.content-div p {
+			margin:0;
+			margin-top:1em;
+		}
+		
+		.LBcontent-div {
+		
+			padding: 1em 5%;
+			margin-top: 1em;
+			margin-bottom: 2em;
+			
+			-moz-box-shadow: 0 0 20px black; 
+			-webkit-box-shadow: 0 0 20px black; 
+			box-shadow: 0 0 20px black; 
+		
+			background: rgba(230,230,230,1);
+			background: -moz-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(230,230,230,1)), color-stop(100%, rgba(255,255,255,1)));
+			background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			background: -o-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			background: -ms-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			background: linear-gradient(to bottom, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2140', endColorstr='#0712b3', GradientType=0 );
+			
+			border: 2px outset #ddd;
+		}
+		
+		.LBcontent-div p {
+			margin:0;
+			margin-top:1em;
+		}
+		
+		#profile-picture {
+		
+			padding: 1em 5%;
+			width:200px;
+			height: 100%;
+			max-width: 100%;
+			float:left;
+			text-align:center;
+		}
+		
+		#profile-picture img {
+			width:100%;
+			border:3px ridge gray;
+		}
+		
+		#bio-box {
+			margin-left: 25%;
+		}
+		
+		h3 {
+			font: 1.3em/2 "Amble Bold", Tahoma, Sans-serif; 
+			text-align:center;
+			border-bottom: 1px solid black;
+		}
+		
+		#bio-box h3 {
+			text-align:left;
+			border-bottom:none;
+		}
+		
+		p.edu {
+			margin:0;
+			margin-left: 12%;
+			font-family: "Amble", Sans-serif;
+		}
+		
+		h4 {
+			font: 1.3em/2 "Amble LCI", Tahoma, Sans-serif; 
+			text-align:center;
+		}
+		
+		#Publications {
+			margin-top:1em;
+			overflow: hidden;
+		}
+		
+		#Pubs-n-Data {
+			margin-top:1em;
+			overflow: hidden;
+		}
+		
+		#footer {
+			text-align:center;
+		}
+		
+		.datamap {
+			position: relative;
+			overflow: hidden;
+			height: 30em;
+			width: 100%;
+			border: 0.3em groove #a53;
+		}
+		
+		.publist-box {
+			width: 100%;
+			margin: 1em 0 0;
+			background: #fdfdfd;
+			border: 0.3em ridge #a53;
+		}
+		
+		.publist {
+			padding: 1em 5%;
+			border-bottom: 1px solid #ddd;
+			width: 90%;
+			margin: 0;
+		}
+		
+		.publist p {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+		}
+		
+		
+		p.pub-title {
+			font: 1.1em "Amble Bold", Tahoma, Sans-serif; 
+		}
+		
+		p.pub-author {
+			font: 1em "Amble", Tahoma, Sans-serif; 
+			clear: right;
+		}
+		
+		
+		span.pub-year {
+			font: 0.9em "Amble LCI", Tahoma, Sans-serif; 
+		}
+		
+		span.pub-doi {
+			float:right;
+			font: 1em/2 "Amble", Tahoma, Sans-serif; 
+		}
+		
+		span.pub-journal {
+			font: 1em/2 "Amble LCI", Tahoma, Sans-serif; 
+			margin-right: 0.5em;
+		}
+		
+		.code-desc{
+			font-style:italic;
+			margin: 0 3em;
+			display:inline-block;
+		}
+		
+		#logosvg {
+			height:65px;
+			width: 65px;
+			position: absolute;
+			display: inline;
+		}
+
+		#header h1,h2{
+			margin-left: 80px;
+		}
+		
+		
+		.printblog {
+		
+			margin-top: 1em;
+			margin-bottom: 2em;
+			
+			display:inline-block;
+			
+		}
+		
+		.printblog img {
+		
+			margin: 1em 5%;
+			width:300px;
+			height: 100%;
+			max-width: 100%;
+			float:left;
+			text-align:center;
+			border:2px solid #777;
+		}
+		
+		.printblog p {
+			margin: 1em 5%;
+		}
+		
+		#modelDownload {
+			float: left;
+			margin: 1em;
+			padding:0.5em;
+			background-color:#fb8;
+			border: 2px solid #ea7;
+		}
+		
+		
+		.printPics {
+			margin-top: 1em;
+			margin-bottom: 2em;
+			width:100%;
+			display:inline-block;
+			text-align:center;
+			height: 450px;
+		}
+		
+		.printPics img {
+			height: auto; 
+		  width: auto; 
+		  max-width: 25%; 
+		  max-height: 100%;
+		}
+		
+		'.printPics img:hover {
+		'	height: 450px;
+		'}
+		
+		a.PrintModelLink:hover div {
+			background-color:#777;
+			border:1px solid black;
+		}
+		
+		.PrintModel {
+			margin:0.5em;
+			padding:0.5em;
+			background:#EEE;
+			border:1px solid #DDD;
+			width:200px;
+			display:inline-block;
+		}
+		
+		.PrintModel p {
+			font-weight:bold;
+		}
+		
+		.PrintModel img {
+			height:150px;
+			border:1px solid black;
+		}
+		
+		.modelViewer {
+			margin:1em auto;
+			display:block;
+		}
+		
+		#ThreeDee-desc {
+		}
+		
+		#ThreeDee-desc p {
+			margin:1em auto;
+			max-width:50em;
+		}
+		
