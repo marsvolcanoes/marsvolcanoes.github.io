@@ -1,6 +1,6 @@
 
 		body {
-			background-color: #fff;
+			background-color: rgb(0,0,0);
 		
 		}
 		
@@ -134,7 +134,7 @@
 		#content {
 			margin: 0 auto;
 			margin-bottom:3em;
-			background: #fffefd;
+			/*background: #fffefd;*/
 			width: 90%;
 			
 		}
@@ -320,6 +320,7 @@
 
 		#header h1,h2{
 			margin-left: 80px;
+			color: #ea7;
 		}
 		
 		
