@@ -8,31 +8,13 @@
 	
 	<title>Mars Volcanoes: A Planetary Science Database</title>
 	
-	
-	<script src="js/dataLoad.js"></script>
-	<script src="js/dataLoad_mars.js"></script>
-	<script src="js/simple_map.js"></script>
 	<script src="js/logo.js"></script>
-	<script type="text/javascript" src="js/marsmap.js"></script>
 	
 	<!-- Leaflet JS and CSS -->
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
 	<script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
 	<!-- OPM Plugin basemaps -->
 	<script src="OPM/OPMBasemaps.js"></script>
-	
-	<script>
-		function bothMaps() {
-			initMapMars();
-			initMapEarth();
-			dataLoad();
-			dataLoadM();
-		}
-	</script>
-	<script 
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDnehOeTxSh_b_xS1NqZYYosqumcHX-lQ&callback=bothMaps"
-	async defer>
-	</script>
 	
 	<link rel="stylesheet" type="text/css" href="css/marsdb.css">
 	</head>
@@ -76,15 +58,19 @@
 		const map = L.map('mapid', {
 			center: [0, 0],
 			maxBounds: [
-			[-90, -Infinity],
-			[90, Infinity],
+			[-90, -200],
+			[90, 200],
 			],
+			worldCopyJump: false,
+			minZoom: 1,
 			maxBoundsViscosity: 0.5
-		}).setView([11.8, -45.04], 3);
+		}).setView([11.92,-104.08], 3);
 		</script>
 
 		<!-- OPM Plugin layer options -->
 		<script src="OPM/OPMLayers.js"></script>
+		<!--Mons-->
+		<script src="data/pts.js"></script>
 
 	</body>
 
